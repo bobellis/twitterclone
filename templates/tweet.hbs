@@ -1,2 +1,16 @@
-<h1>{{this.body}}</h1>
-<h3>{{this.date}}</h3>
+<h1>{{body}}</h1>
+<h3>{{date}}</h3>
+
+
+{{#link-to 'replies'}}Show Replies{{/link-to}}
+{{outlet}}
+
+<h3>Reply to this Tweet</h3>
+<form>
+  <div class="form-group">
+    {{textarea id="replybody" class="form-control" maxlength="141" placeholder="Reply here..." rows="1" value=replybody}}
+  </div>
+
+  <button class="btn btn-warning" {{action 'newReply'}}>Reply</button>
+
+</form>

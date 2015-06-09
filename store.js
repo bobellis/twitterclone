@@ -22,12 +22,6 @@ var tweets = [
 
   },
   {
-    id: 10,
-    body: "That famous actor is really terrible!",
-    date: "5/14/15"
-
-  },
-  {
     id: 5,
     body: "Got a dog today, he's soo cute!",
     date: "3/12/15"
@@ -57,5 +51,44 @@ var tweets = [
     date: "5/05/15"
 
   },
+  {
+    id: 10,
+    body: "That famous actor is really terrible!",
+    date: "5/14/15"
+
+  },
 
 ];
+
+var replies = [
+  {
+    id: 1,
+    tweetid:2,
+    reply: "mine too"
+  },
+  {
+    id: 2,
+    tweetid:3,
+    reply: "that's great!"
+  },
+  {
+    id: 3,
+    tweetid:1,
+    reply: "OK!"
+  },
+  {
+    id: 4,
+    tweetid:1,
+    reply: "Good to hear!"
+  },
+  {
+    id: 5,
+    tweetid:2,
+    reply: "Wonderful!"
+  },
+  {
+    id: 6,
+    tweetid:3,
+    reply: "Fantastic!"
+  },
+]
